@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/create.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo-text">Blog Page</h1>
+        <div class="navbar-btn">
+            <a href="index.html"class="home-btn" >Home</a>
+            <button type="button" class="login btn" id="login-btn" >login</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="home">
+                <h1 class="welcome-text">Create New Post</h1>
+            </div>
+            <div class="content">
+                <form method="post" class="form-box" id="create-form">
+                    <label for="title">Post Title</label>
+                        <input type="text" name="title" id="title" placeholder="Enter post title" required>
+                    <label for="description">Description</label>
+                        <textarea name="description" id="description" cols="30" rows="3" placeholder="Enter post description" required></textarea>
+                    <label for="photo">Image</label>
+                        <input type="text" name="image" id="image" placeholder="Enter image url" required>
+                    <input type="submit" id="post" value="Post Now">
+                    </form>
+            </div>
+        </div>
+        
+    </main>
+    <script src="js/scripts.js"></script>
+    <script src="js/create-update.js"></script>
+</body>
+</html>

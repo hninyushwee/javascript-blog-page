@@ -1,0 +1,69 @@
+/* Content Section */
+.content-box{
+    background-color: var(--main-color);
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 30px;
+    padding: 40px 50px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+.img-box{
+    text-align: center;
+    margin: 20px 0;
+}
+
+img{
+    width: 55%;
+    height: 270px;
+    object-fit: cover;
+}
+.body{
+    text-indent: 50px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.createBy{
+    font-style: italic;
+    color: #00000091;
+}
+.action{
+    display: flex;
+    justify-content: space-between;
+}
+.edit-btn, .delete-btn, #like, #comment{
+    font-family: Poppins;
+    font-size: 0.9rem;
+    padding: 0 7px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--main-color);
+}
+.edit-btn{
+    color: var(--btn-color);
+}
+.delete-btn{
+    color: red;
+}
+
+@media (max-width : 900px){ 
+    img{
+        height: 200px;
+    }
+}
+@media (max-width : 770px){ 
+    img{
+        height: 150px;
+    }
+}
+@media (max-width : 500px){
+    img{
+        height: 100px;
+    }
+}
+@media (max-width : 375px){
+    img{
+        height: 70px;
+    }
+}
